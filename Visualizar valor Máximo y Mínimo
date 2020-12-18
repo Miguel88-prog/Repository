@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package array.pkg1;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author 1GDAW11
+ */
+public class Array1 {
+
+    /**
+     * @param args the command line arguments
+     */
+
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        float[] numeroArray;
+       numeroArray = new float [10]; 
+      
+        for(int x = 0; x < 10; x++){
+        numeroArray[x]=Float.parseFloat(JOptionPane.showInputDialog("Escribe un número"));    
+        }
+       for(int x = 0; x < 10; x++)
+ System.out.println("Posicion: " + x + " Contenido  : " +
+numeroArray[x]);
+       float maximo= numeroArray[0];
+       float minimo= numeroArray[0];
+       for(int x = 0; x < 10; x++){
+           if(maximo<numeroArray[x] )
+               maximo=numeroArray[x];
+           
+           else
+               if(minimo>numeroArray[x])
+                   minimo=numeroArray[x]; 
+           
+           
+       }
+         
+ System.out.println("Maximo: " + maximo + " Minimo : " +
+minimo);      
+    }
+    
+}
