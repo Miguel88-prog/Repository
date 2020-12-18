@@ -1,0 +1,74 @@
+package pkg10.ArrayTable;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author 1GDAW11
+ */
+public class ArrayTable {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+        // TODO code application logic here
+        
+       int menu;
+    menu = Integer.parseInt (javax.swing.JOptionPane.showInputDialog("numero de tabla"));
+        
+        
+        
+        
+        
+
+        
+       int solicitar = 0;
+      int numero1= solicitar ;       
+      int numero2=solicitar ;
+      int numero3=solicitar;
+      int numero4=solicitar;
+      
+       int columna1=solicitar;
+        int columna2=solicitar;
+        int columna3=solicitar;
+        int columna4=solicitar;
+     
+  
+        
+      numero1=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la primera fila y primera columna"));
+     numero2=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la primera fila y segunda columna"));
+     numero3=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la primera fila y tercera columna"));
+     numero4=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la primera fila y cuarta columna"));
+     
+     columna1=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la segunda fila y primera columna"));
+     columna2=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la segunda fila y segunda columna"));
+     columna3=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la segunda fila y tercera columna"));
+     columna4=  Integer.parseInt (javax.swing.JOptionPane.showInputDialog("escribe el numero de la segunda fila y cuarta columna"));
+     
+    int[][] arrayBidimensional = new int[2][4];
+
+ arrayBidimensional [0][0] = numero1;
+ arrayBidimensional [0][1] = numero2;
+ arrayBidimensional [0][2] = numero3 ;
+ arrayBidimensional [0][3]= numero4;
+ 
+
+ arrayBidimensional [1][0] = columna1;
+arrayBidimensional [1][1] = columna2;
+arrayBidimensional [1][2] = columna3;
+ arrayBidimensional [1][3] = columna4;
+
+
+
+ for(int fila = 0; fila < 2; fila ++)
+ {
+ for(int columna = 0; columna < 4; columna ++)
+ System.out.print( arrayBidimensional [fila ][ columna ]);
+        
+       System.out.println ();
+    }
+ 
+    }
+}
